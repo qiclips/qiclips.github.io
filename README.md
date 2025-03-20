@@ -1,2 +1,3 @@
 # qiclips.github.io
-qiclips.qilove.store
+
+[clips.qilove.store](https://clips.qilove.store)
