@@ -1,0 +1,49 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://clips.qilove.store/</id>
+  <title>齊愛剪影</title>
+  <subtitle>Clips from online sources. Qilove arranged them to store in this website.</subtitle>
+  <updated>2025-03-21T18:27:27+08:00</updated>
+  <author>
+    <name>qilove</name>
+    <uri>https://clips.qilove.store/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="https://clips.qilove.store/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="zh-CN"
+    href="https://clips.qilove.store/"/>
+  <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
+  <rights> © 2025 qilove </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>斗罗大陆</title>
+    <link href="https://clips.qilove.store/posts/%E6%96%97%E7%BD%97%E5%A4%A7%E9%99%86/" rel="alternate" type="text/html" title="斗罗大陆" />
+    <published>2023-06-17T11:33:00+08:00</published>
+  
+    <updated>2025-03-21T18:27:05+08:00</updated>
+  
+    <id>https://clips.qilove.store/posts/%E6%96%97%E7%BD%97%E5%A4%A7%E9%99%86/</id>
+    <content type="text/html" src="https://clips.qilove.store/posts/%E6%96%97%E7%BD%97%E5%A4%A7%E9%99%86/" />
+    <author>
+      <name>qilove</name>
+    </author>
+
+  
+    
+    <category term="动漫" />
+    
+    <category term="国产" />
+    
+  
+
+  <summary>前尘巴蜀虽如梦，此生不悔入唐门</summary>
+
+  </entry>
+
+</feed>
+
+
