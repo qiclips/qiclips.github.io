@@ -1,3 +1,7 @@
 [submodule "assets/lib"]
 	path = assets/lib
 	url = https://github.com/cotes2020/chirpy-static-assets.git
+[submodule "_site"]
+	path = _site
+	url = git@qilove.work:qilove/clips.qilove.store.git
+	branch = pages
