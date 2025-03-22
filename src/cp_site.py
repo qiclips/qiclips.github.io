@@ -111,7 +111,7 @@ def main(locale, work_dir= '../'):
     replace_text_in_files(locale,cp_files, destination_directory)
 
 if __name__ == "__main__":
-    main('en')
+    main('zh-CN')
 
     
         
