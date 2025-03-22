@@ -91,8 +91,8 @@ def main(locale, work_dir= '../'):
     os.chdir(current_file_dir)
 
     # 设置源目录和目标目录
-    source_directory = os.path.abspath('./_site')
-    destination_directory = os.path.abspath('./output/'+locale)
+    source_directory = os.path.abspath('../_site')
+    destination_directory = os.path.abspath('../_output/'+locale)
     if locale == 'zh-CN':
         copy_all_files(source_directory, destination_directory)
         return
