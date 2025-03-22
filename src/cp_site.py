@@ -9,16 +9,23 @@ def copy_all_files(source_dir, destination_dir):
     :param source_dir: 源目录的路径
     :param destination_dir: 目标目录的路径
     """
-    # 如果目标目录已存在，先删除它
-    if os.path.exists(destination_dir):
-        shutil.rmtree(destination_dir)
-    
     try:
-        # 递归复制源目录到目标目录
-        shutil.copytree(source_dir, destination_dir)
-        print(f"成功将 {source_dir} 复制到 {destination_dir}")
+        if not os.path.exists(destination_dir):
+            os.makedirs(destination_dir)
+
+        for root, dirs, files in os.walk(source_dir):
+            for file in files:
+                source_file_path = os.path.join(root, file)
+                relative_path = os.path.relpath(source_file_path, source_dir)
+                target_file_path = os.path.join(destination_dir, relative_path)
+                target_sub_dir = os.path.dirname(target_file_path)
+                if not os.path.exists(target_sub_dir):
+                    os.makedirs(target_sub_dir)
+                shutil.copy2(source_file_path, target_file_path)
+                print(f"Copied {source_file_path} to {target_file_path}")
     except Exception as e:
-        print(f"复制时出错: {e}")
+        print(f"An error occurred: {e}")
+        
 def copy_html_and_xml_files(source_dir, destination_dir):
     """
     复制指定源目录下的所有 HTML 和 XML 文件到目标目录，忽略 assets 文件夹。
@@ -50,6 +57,7 @@ def copy_html_and_xml_files(source_dir, destination_dir):
                 try:
                     cp_file = shutil.copy2(source_file, destination_file)
                     cp_files.append(cp_file)
+                    print(f"Copied {source_file} to {source_file}")
                 except Exception as e:
                     print(f"复制文件 {source_file} 到 {destination_file} 时出错: {e}")
     return cp_files
