@@ -8,3 +8,4 @@
 [submodule "en"]
 	path = _output/en
 	url = git@qilove.work:qiclips/en.git
+	branch = pages
